@@ -14,7 +14,7 @@ class UniversityCampus(models.Model):
     def __str__(self):
         #returns the input value of the title and istructor name
         #field as a tuple to display in teh browser istead of the default titles
-        display_campus = '{0.title}: {0.campus_name}'
+        display_campus = '{0.state}: {0.campus_name}'
         return display_campus.format(self)
 
     #removes added 's' that Django adds to the model name in the browser display
